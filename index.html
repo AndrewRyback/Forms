@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form</title>
+</head>
+
+<body>
+    <h1>Заповніть форму для реєстрації</h1>
+    <form action="" method="POST">
+        <datalist id="names">
+            <option value="Андрій">Андрій</option>
+            <option value="Софія">Софія</option>
+            <option value="Богдан">Богдан</option>
+        </datalist>
+        <p>
+            <label for="name">Повне імʼя</label>
+            <br />
+            <input tabindex="2" id="name" placeholder="Введіть своє повне і'мя" name="name" type="text" required
+                minlength="2" maxlength="40" list="names" />
+        </p>
+        <p>
+            <label for="email">Email </label>
+            <br />
+            <input tabindex="1" id="email" placeholder="Введіть ел. адресу" name="email" type="email" required />
+        </p>
+        <p>
+            <label for="password">Ваш пароль</label>
+            <br />
+            <input id="password" placeholder="Введіть ваш пароль" name="password" type="password" minlength="4"
+                maxlength="20" width="200px" required />
+        </p>
+        <p>
+            <label for="password">Ваш пароль</label>
+            <br />
+            <input id="password2" placeholder="Введіть ваш пароль ще раз" name="password" type="password" minlength="4"
+                maxlength="20" width="200px" required />
+        </p>
+
+        <p>
+            <label for="sex"> Ваша стать:</label>
+            <br>
+            Чоловіча
+            <input name="pets" value="cat" type="radio" />
+
+
+
+            <label>
+                Жіноча
+                <input name="pets" value="dog" type="radio" />
+            </label>
+        </p>
+        <p>
+            <label for="age">Ваш вік</label>
+            <br />
+            <input id="age" placeholder="Введіть ваш вік" name="age" type="number" min="18" max="120" />
+        </p>
+
+    </form>
+</body>
+
+
+</html>
