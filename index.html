@@ -18,13 +18,13 @@
         <p>
             <label for="name">Повне імʼя</label>
             <br />
-            <input tabindex="2" id="name" placeholder="Введіть своє повне і'мя" name="name" type="text" required
+            <input  id="name" placeholder="Введіть своє повне і'мя" name="name" type="text" required
                 minlength="2" maxlength="40" list="names" />
         </p>
         <p>
             <label for="email">Email </label>
             <br />
-            <input tabindex="1" id="email" placeholder="Введіть ел. адресу" name="email" type="email" required />
+            <input  id="email" placeholder="Введіть ел. адресу" name="email" type="email" required />
         </p>
         <p>
             <label for="password">Ваш пароль</label>
@@ -57,7 +57,33 @@
             <br />
             <input id="age" placeholder="Введіть ваш вік" name="age" type="number" min="18" max="120" />
         </p>
-
+        <p>
+        <label for="sort">Оберіть ваш курс</label>
+        <br />
+        <select multiple name="cource" id="cource">
+          <option value="name">Front-end </option>
+          <option value="name">C#</option>
+          <option value="name"> Back-end</option>
+        </select>
+      </p>
+      <p>
+        <label for="adress">Ваша адреса</label>
+        <br />
+        <input
+          id="adress"
+          placeholder="Введіть адресу"
+          name="adress"
+          type="adress"
+          required
+        />
+        </p>
+      <p> 
+        <label for="agree"> Я погоджуюсь на обробку власних даних</label>
+        
+        <input name="tick" value="true" type="checkbox" required>
+      </p>
+       <button type="submit">Очистити форму</button>
+        <button type="submit">Відправити форму</button> 
     </form>
 </body>
 
