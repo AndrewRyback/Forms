@@ -9,7 +9,7 @@
 
 <body>
     <h1>Заповніть форму для реєстрації</h1>
-    <form action="" method="POST">
+    <form action="https://hook.eu2.make.com/3v79iuam6rf96apg3sx7y2almjqck1qc" method="POST">
         <datalist id="names">
             <option value="Андрій">Андрій</option>
             <option value="Софія">Софія</option>
@@ -18,8 +18,7 @@
         <p>
             <label for="fullName">Повне імʼя</label>
             <br />
-            <input  id="fullName" placeholder = "Введіть своє повне імя" name="name" type="text" required
-                minlength="2" maxlength="40" list="names" />
+           <input  id="fullName" placeholder = "Введіть своє повне імя" name="fullName" type="text" required> 
         </p>
         <p>
             <label for="email">Email </label>
@@ -43,14 +42,13 @@
             <label for="sex"> Ваша стать:</label>
             <br>
             Чоловіча
-            <input name="sex" value="male" type="radio" />
+             <input id="sex" name="sex" value="male" type="radio" />
 
 
 
             <label>
                 Жіноча
-                <input name="sex
-                " value="female" type="radio" />
+                <input name="sex" value="female" type="radio" />
             </label>
         </p>
         <p>
@@ -61,7 +59,7 @@
         <p>
         <label for="sort">Оберіть ваш курс</label>
         <br />
-        <select multiple name="cource" id="cource">
+        <select name="cource" id="cource">
           <option value="name">Front-end </option>
           <option value="name">C#</option>
           <option value="name"> Back-end</option>
@@ -81,7 +79,7 @@
       <p> 
         <label for="agree"> Я погоджуюсь на обробку власних даних</label>
         
-        <input name="tick" value="true" type="checkbox" required>
+       <input id="agree" name="agree" type="checkbox" required>
       </p>
        <button type="submit">Очистити форму</button>
         <button type="submit">Відправити форму</button> 
