@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic form</title>
+</head>
+
+<body>
+    <h1>Заповніть форму для реєстрації</h1>
+    <form action="https://hook.eu2.make.com/3v79iuam6rf96apg3sx7y2almjqck1qc" method="POST">
+        <datalist id="names">
+            <option value="Андрій">Андрій</option>
+            <option value="Софія">Софія</option>
+            <option value="Богдан">Богдан</option>
+        </datalist>
+        <p>
+            <label for="fullName">Повне імʼя</label>
+            <br />
+           <input  id="fullName" placeholder = "Введіть своє повне імя" name="fullName" type="text" required> 
+        </p>
+        <p>
+            <label for="email">Email </label>
+            <br />
+            <input  id="email" placeholder="Введіть ел. адресу" name="email" type="email" required />
+        </p>
+        <p>
+            <label for="password1">Ваш пароль</label>
+            <br />
+            <input id="pw1" placeholder="Введіть ваш пароль" name="password1" type="password" minlength="4"
+                maxlength="20" width="200px" required />
+        </p>
+        <p>
+            <label for="password">Ваш пароль</label>
+            <br />
+            <input id="pw2" placeholder="Введіть ваш пароль ще раз" name="password2" type="password" minlength="4"
+                maxlength="20" width="200px" required />
+        </p>
+
+        <p>
+            <label for="sex"> Ваша стать:</label>
+            <br>
+            Чоловіча
+             <input id="sex" name="sex" value="male" type="radio" />
+
+
+
+            <label>
+                Жіноча
+                <input name="sex" value="female" type="radio" />
+            </label>
+        </p>
+        <p>
+            <label for="age">Ваш вік</label>
+            <br />
+            <input id="age" placeholder="Введіть ваш вік" name="age" type="number" min="18" max="120" />
+        </p>
+        <p>
+        <label for="sort">Оберіть ваш курс</label>
+        <br />
+        <select name="cource" id="cource">
+          <option value="name">Front-end </option>
+          <option value="name">C#</option>
+          <option value="name"> Back-end</option>
+        </select>
+      </p>
+      <p>
+        <label for="address">Ваша адреса</label>
+        <br />
+        <input
+          id="address"
+          placeholder="Введіть адресу"
+          name="address"
+          type="address"
+          required
+        />
+        </p>
+      <p> 
+        <label for="agree"> Я погоджуюсь на обробку власних даних</label>
+        
+       <input id="agree" name="agree" type="checkbox" required>
+      </p>
+       <button type="submit">Очистити форму</button>
+        <button type="submit">Відправити форму</button> 
+    </form>
+</body>
+
+
+</html>
